@@ -70,3 +70,17 @@ class FirestoreClient:
             print('User registered successfully')
         except Exception as e:
             print(f'Error registering user: {e}')
+            
+    
+    def check_username_exists(self, username):
+        try:
+            users_ref = db.collection('users')
+            query = db.collection('users').where('Username', '==', username)
+            documents = query.get()
+
+            # Check if there are any matching documents
+            is_username_exist = len(documents) > 0
+
+            return is_username_exist
+        except Exception as e:
+            print(f'Error chceking username: {e}')

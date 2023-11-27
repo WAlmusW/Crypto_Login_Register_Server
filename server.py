@@ -89,8 +89,9 @@ def register():
         
         print('debug3')
         
-        # Register the user in Firestore based on the provided username and password
         fs_client = auth.FirestoreClient()
+        if fs_client.check_username_exists(username) == False:
+            return jsonify({'message': 'Username already exists'})
         fs_client.register_user(username, password, device_udid, email, phone_number)
         
         print('debug4')
