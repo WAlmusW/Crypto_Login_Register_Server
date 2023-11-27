@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "80442734802",
+    "firebase_url": "https://loginregister-25083-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "loginregister-25083",
+    "storage_bucket": "loginregister-25083.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80442734802:android:81188a1cfb3df220b5d50b",
+        "android_client_info": {
+          "package_name": "com.example.login_register_"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk3RrLCBXspTzp_omjm26a0H1BNxqC1Ug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
